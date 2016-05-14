@@ -36,9 +36,9 @@ def flytrafikk():
     (xmin, xmax, ymin, ymax) = plot.axis()
     fig = matplotlib.pyplot.gcf()
     fig.set_size_inches(10.0, 6.0)
-    #import ipdb; ipdb.set_trace()
-    plot.axis((xmin, xmax, 0, ymax))
+    plot.axis((xmin, xmax, 0, 140.0))
     pylab.savefig('flytrafikk.png', bbox_inches='tight')
+    print ss
 
 if __name__=="__main__":
     fly = flytrafikk()

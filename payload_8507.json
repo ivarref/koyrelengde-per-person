@@ -3,10 +3,9 @@
         {
             "code": "Lufthavn",
             "selection": {
-                "filter": "item",
+                "filter": "all",
                 "values": [
-                    "ENGM",
-                    "ENZV"
+                    "*"
                 ]
             }
         },
