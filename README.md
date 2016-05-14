@@ -1,9 +1,3 @@
-# Strategy
+# Køyrelengde per person
 
-Know enough pandas to filter and join stuff.
-
-Pull data from SSB.
-
-Pretty diagram.
-
-# koyrelengde-per-person
+![text](https://github.com/ivarref/koyrelengde-per-person/raw/master/koyrelengde_per_person.png)
