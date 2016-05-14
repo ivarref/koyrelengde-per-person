@@ -42,7 +42,7 @@ if __name__=="__main__":
     ss = m.loc[:, [desc]]
     plot = ss.plot()
     (xmin, xmax, _, _) = plot.axis()
-    plot.axis((xmin, xmax, 0.0, 125.0))
+    plot.axis((xmin, xmax, 0.0, 130.0))
     if "--docker" in sys.argv:
         pylab.savefig('output/koyrelengde_per_person.png', bbox_inches='tight')
     else:
