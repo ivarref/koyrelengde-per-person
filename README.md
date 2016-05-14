@@ -2,5 +2,5 @@
 
 ![text](https://github.com/ivarref/koyrelengde-per-person/raw/master/koyrelengde_per_person.png)
 
-# Flytrafikk
+# Antall passasjerer, lufttransport
 ![text](https://github.com/ivarref/koyrelengde-per-person/raw/master/flytrafikk.png)
