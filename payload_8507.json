@@ -1,0 +1,62 @@
+{
+    "query": [
+        {
+            "code": "Lufthavn",
+            "selection": {
+                "filter": "item",
+                "values": [
+                    "ENGM",
+                    "ENZV"
+                ]
+            }
+        },
+        {
+            "code": "TrafikkType",
+            "selection": {
+                "filter": "item",
+                "values": [
+                    "000"
+                ]
+            }
+        },
+        {
+            "code": "TrafikkFly",
+            "selection": {
+                "filter": "item",
+                "values": [
+                    "IU"
+                ]
+            }
+        },
+        {
+            "code": "PassasjerType",
+            "selection": {
+                "filter": "item",
+                "values": [
+                    "AAT"
+                ]
+            }
+        },
+        {
+            "code": "ContentsCode",
+            "selection": {
+                "filter": "item",
+                "values": [
+                    "Passasjerer"
+                ]
+            }
+        },
+        {
+            "code": "Tid",
+            "selection": {
+                "filter": "all",
+                "values": [
+                    "*"
+                ]
+            }
+        }
+    ],
+    "response": {
+        "format": "json-stat"
+    }
+}
