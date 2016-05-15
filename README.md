@@ -7,4 +7,4 @@
 
 # Flytrafikk
 ![text](https://github.com/ivarref/koyrelengde-per-person/raw/master/flytrafikk.png)
-Alle flyplasser, Noreg. Tabell 08503 frå SSB hStatistikkbanken.
+Alle flyplasser, Noreg. Tabell 08503 frå SSB Statistikkbanken.
