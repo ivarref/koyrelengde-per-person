@@ -29,7 +29,7 @@ def flytrafikk():
     ss = ss[ss.value > 0] # remove NaNs
     ss.index = ss.index.astype(datetime.datetime)
     ss = ss[ss.index >= datetime.datetime(2010, 1,1)]
-    desc = u'Flybevegelser, total ankomst og avgang, innland og utland. 12 måneders gjennomsnitt. 100=' + str(ss.index[0].year)
+    desc = u'Flybevegelser, total ankomst og avgang, innland og utland. 12 måneders gjennomsnitt. ' + str(ss.index[0].year) + '=100'
     ss[desc] = (ss.value * 100.0) / ss.value.values[0]
     ss = ss.drop(u'value', 1)
     plot = ss.plot()
@@ -39,7 +39,7 @@ def flytrafikk():
     ax = fig.axes[0]
     fig.set_size_inches(12.0, 6.0)
 
-    txt = "%.f=%4d-%02d" % (ss[desc].values[-1], ss.index[-1].year, ss.index[-1].month)
+    txt = "%4d-%02d=%.f" % (ss.index[-1].year, ss.index[-1].month, ss[desc].values[-1])
     ax.annotate(txt, (mdates.date2num(ss.index.values[-1]), ss[desc].values[-1]),
                 xytext=(-10, -20),
                 textcoords='offset points',
