@@ -13,3 +13,6 @@ Alle flyplasser, Noreg. Tabell 08507 frå SSB Statistikkbanken.
 ![text](https://github.com/ivarref/koyrelengde-per-person/raw/master/flytrafikk.png)
 
 Alle flyplasser, Noreg. Tabell 08503 frå SSB Statistikkbanken.
+
+# Folkemengde
+![text](https://github.com/ivarref/koyrelengde-per-person/raw/master/folkemengde.png)

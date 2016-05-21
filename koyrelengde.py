@@ -9,6 +9,7 @@ import sys
 import matplotlib.pyplot
 import matplotlib
 matplotlib.style.use('ggplot')
+from folkemengde import folkemengde
 
 def kjorelengde():
     url = 'http://data.ssb.no/api/v0/no/table/07301'
@@ -18,16 +19,6 @@ def kjorelengde():
     frame = result[0]
     frame[u'år'] = pd.to_numeric(frame[u'år'])
     frame[u'koyrelengde'] = pd.to_numeric(frame.value)
-    return frame
-
-def folkemengde():
-    url = 'http://data.ssb.no/api/v0/no/table/06913'
-    payload = {"query": [{"code": "Region", "selection": {"filter": "item", "values": ["0"]}}, {"code": "ContentsCode", "selection": {"filter": "item", "values": ["Folkemengde"]}}, {"code": "Tid", "selection": {"filter": "all", "values": ["*"]}}], "response": {"format": "json-stat"}}
-    data = requests.post(url, json = payload)
-    result = pyjstat.from_json_stat(data.json(object_pairs_hook=OrderedDict))
-    frame = result[0]
-    frame[u'år'] = pd.to_numeric(frame[u'år']) - 1
-    frame[u'folkemengde'] = pd.to_numeric(frame[u'value'])
     return frame
 
 if __name__=="__main__":
